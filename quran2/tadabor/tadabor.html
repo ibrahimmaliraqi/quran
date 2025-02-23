@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تدبر القرآن الكريم</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="tadabor.css">
+</head>
+
+<body>
+    <header class="tadabor-header">
+        <h1>تدبر القرآن الكريم</h1>
+        <p class="header-description">تأملات وتدبر في آيات الله</p>
+    </header>
+
+    <nav class="main-nav">
+        <ul class="nav-links">
+            <li><a href="../index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+            <li><a href="../quran/quran.html"><i class="fas fa-book-quran"></i> القرآن الكريم</a></li>
+            <li><a href="../live/live.html"><i class="fas fa-broadcast-tower"></i> البث القرآني</a></li>
+            <li><a href="../tasbih/tasbih.html"><i class="fas fa-prayer-beads"></i> المسبحة</a></li>
+            <li><a href="../adhkar/adhkar.html"><i class="fas fa-book"></i> الأذكار</a></li>
+            <li><a href="../tadabor/tadabor.html" class="active"><i class="fas fa-lightbulb"></i> التدبر</a></li>
+            <li><a href="../basma/basma.html"><i class="fas fa-fingerprint"></i> البصمة</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div id="tadabor-content" class="tadabor-grid"></div>
+        </div>
+    </main>
+
+    <!-- إضافة modal للفيديو -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="videoFrame" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة لدى ابراهيم محمد &copy; 2025</p>
+
+    </footer>
+
+    <script src="tadabor.js"></script>
+</body>
+
+</html>

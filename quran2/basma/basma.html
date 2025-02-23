@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بصمتك في الموقع</title>
+    <link rel="stylesheet" href="basma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="../index.html" class="home-link">
+            <i class="fas fa-home"></i>
+            الرئيسية
+        </a>
+    </nav>
+    <div class="container">
+        <div class="welcome-section">
+            <div class="welcome-header">
+                <i class="fas fa-heart pulse"></i>
+                <h1>اترك بصمتك</h1>
+                <i class="fas fa-heart pulse"></i>
+            </div>
+            <div class="welcome-text">
+                <p>شارك إخوانك المسلمين بدعاء صالح أو نصيحة طيبة تنفعهم في دينهم ودنياهم</p>
+                <p class="hadith">"مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ" - رواه مسلم</p>
+            </div>
+        </div>
+
+        <div class="header">
+            <h2>بصمات الزوار</h2>
+            <button id="toggleForm" class="toggle-button">
+                <i class="fas fa-plus"></i>
+                إضافة بصمة
+            </button>
+        </div>
+        
+        <div class="basma-form" id="basmaForm" style="display: none;">
+            <div class="form-container">
+                <input type="text" id="name" placeholder="اسمك (اختياري)">
+                <input type="text" id="dua" placeholder="دعاؤك">
+                <textarea id="message" placeholder="رسالتك أو نصيحتك للزوار"></textarea>
+                <button onclick="saveBasma()" class="submit-button">
+                    <i class="fas fa-save"></i>
+                    حفظ بصمتي
+                </button>
+            </div>
+        </div>
+
+        <div class="basmat">
+            <div id="basmatList"></div>
+        </div>
+
+        <!-- <div class="admin-link">
+            <a href="admin.html" class="admin-link-button">
+                <i class="fas fa-user-shield"></i>
+                صفحة المشرف
+            </a>
+        </div> -->
+    </div>
+    <script src="basma.js"></script>
+</body>
+</html>
